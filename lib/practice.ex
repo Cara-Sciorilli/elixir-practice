@@ -22,4 +22,12 @@ defmodule Practice do
   end
 
   # TODO: Add a palindrome? function.
+  def palindrome?(string) do
+    downcaseNoSpace = 
+    string
+    |> String.downcase()
+    |> String.replace(" ", "")
+    
+    downcaseNoSpace == String.reverse(downcaseNoSpace)
+  end
 end
