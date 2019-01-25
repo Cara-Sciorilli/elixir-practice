@@ -30,11 +30,11 @@ defmodule Practice.Calc do
   end
 
   def mult_and_div([{:num, num1}, {:op, "*"}, {:num, num2} | rest]) do
-      [{:num, num1 * num2}] ++ mult_and_div(rest)
-  end 
+      mult_and_div([{:num, num1 * num2}] ++ rest)
+  end
 
   def mult_and_div([{:num, num1}, {:op, "/"}, {:num, num2} | rest]) do
-      [{:num, num1 / num2}] ++ mult_and_div(rest)
+      mult_and_div([{:num, num1 / num2}] ++ rest)
   end
 
   def mult_and_div([first | rest]) do
@@ -46,11 +46,11 @@ defmodule Practice.Calc do
   end
 
   def add_and_sub([{:num, num1}, {:op, "+"}, {:num, num2} | rest]) do
-      [{:num, num1 + num2}] ++ add_and_sub(rest)
+     add_and_sub([{:num, num1 + num2}] ++ rest)
   end
 
   def add_and_sub([{:num, num1}, {:op, "-"}, {:num, num2} | rest]) do
-      [{:num, num1 - num2}] ++ add_and_sub(rest)
+      add_and_sub([{:num, num1 - num2}] ++ rest)
   end
 
   def add_and_sub([first | rest]) do
