@@ -1,0 +1,39 @@
+Please fill in answers to the questions below:
+
+
+1. What's your name?
+Cara Sciorilli
+
+2. What hostname did you deploy to for Task 2?
+hw03.carawebdev.com
+
+3. What's the URL of your git repo for Task 2?
+https://github.com/Cara-Sciorilli/elixir-practice
+
+4. How much of the functionality did you complete?
+100%
+
+
+5. Did you successfully deploy? If not, what's broken?
+Yes
+
+6. How comfortable do you feel with Elixir now?
+70%
+
+7. Which parts of this assignment did you have trouble with, if any?
+
+I originally went about factoring from beginning with the number and decreasing from there, this proved to be way too slow. It took me a bit to realize I needed to start from 2 and go up.
+
+I also had trouble with the concept of pattern matching, but figured that out with using the iex practice in terminal and the help of Ben.
+
+
+
+And here's a list of tasks for grading comments. Just leave this here:
+ - Task 1
+ - Task 2
+ - Task 3
+ - Task 4
+ - Task 5
+ - Task 6
+ - Task 7
+ - Task 8
