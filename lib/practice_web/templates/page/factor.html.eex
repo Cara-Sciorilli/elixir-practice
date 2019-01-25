@@ -3,7 +3,9 @@
     <p><%= link "← go back", to: "/" %></p>
     <h2>Factor Results</h2>
 
-    <p>Prime Factorization for <%= @x %> is:</p>
-    <p><%= @y %></p>
+    <p>Prime Factorization for <%= @x %> is: </p>
+    <%= Enum.map(@y, fn(item) -> %>
+      <p><%= item %></p>
+    <% end) %>
   </div>
 </div>

@@ -17,17 +17,17 @@ defmodule Practice do
   end
 
   def factor(x) do
-    # Maybe delegate this too.
-    [1,2,x]
+    # Delegated to lib/practice/factor.ex
+    Practice.Factor.factor(x)
   end
 
   # TODO: Add a palindrome? function.
   def palindrome?(string) do
-    downcaseNoSpace = 
+    downcaseNoSpace =
     string
     |> String.downcase()
     |> String.replace(" ", "")
-    
+
     downcaseNoSpace == String.reverse(downcaseNoSpace)
   end
 end
