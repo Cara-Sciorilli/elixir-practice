@@ -4,8 +4,10 @@
     <h2>Factor Results</h2>
 
     <p>Prime Factorization for <%= @x %> is: </p>
-    <%= Enum.map(@y, fn(item) -> %>
-      <p><%= item %></p>
+    <p><%= Enum.map(Enum.drop(@y, -1), fn(item) -> %>
+      <%= item %> ,
     <% end) %>
+    <%= hd Enum.take(@y, -1) %>
+  </p>
   </div>
 </div>
