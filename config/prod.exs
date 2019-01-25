@@ -17,7 +17,7 @@ config :practice, PracticeWeb.Endpoint,
   version: Application.spec(:phoenix_distillery, :vsn),
   url: [host: "hw03.carawebdev.com", port: 80]
 
-# TODO: Correct the above URL for deployment.
+# Corrected the above URL for deployment.
 
 # Do not print debug messages in production
 config :logger, level: :info
@@ -85,4 +85,3 @@ secret = File.read!(path)
 
 config :draw, PracticeWeb.Endpoint,
   secret_key_base: secret
-

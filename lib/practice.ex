@@ -21,7 +21,7 @@ defmodule Practice do
     Practice.Factor.factor(x)
   end
 
-  # TODO: Add a palindrome? function.
+  # Added a palindrome? function.
   def palindrome?(string) do
     downcaseNoSpace =
     string
